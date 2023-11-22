@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nieve</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body class="snow-theme">
+    <div class="container">
+        <h1>Nieve</h1>
+        
+        <form id="entityForm">
+            <label for="entityName">Nombre del sabor de la nieve:</label>
+            <input type="text" id="entityName" required>
+
+            <label for="attribute1">Sabor Especial</label>
+            <input type="text" id="attribute1" required>
+
+            <label for="attribute2">Sabor Exótico</label>
+            <input type="text" id="attribute2" required>
+
+            <label for="attribute3">Sabor Clásico</label>
+            <input type="text" id="attribute3" required>
+
+            <label for="dateAttribute">Fecha de producción:</label>
+            <input type="date" id="dateAttribute" required>
+
+            <button type="button" onclick="alta()">Agregar Sabor</button>
+            <br>
+            <button type="button" onclick="consulta()">Todos los Sabores</button>
+            <br>
+        </form>
+        <div id="result"></div>
+        <div id="result"></div>
+        <!-- Mostrar los sabores como botones -->
+        <div id="listaSabores">
+         <h2>Lista de Sabores</h2>
+         <div id="saboresContainer"></div>
+     </div>
+ </div>
+    <script src="java.js"></script>
+</body>
+</html>

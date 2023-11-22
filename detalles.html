@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Helado</title>
+    <link rel="stylesheet" href="detalles.css">
+</head>
+<body class="snow-theme">
+    <div class="container">
+        <h1>Detalles del Helado</h1>
+        <div id="detalleSabor"></div>
+        
+        <!-- Botones para eliminar y activar el modo de edición -->
+        <button type="button" onclick="baja()">Eliminar Sabor</button>
+        <br>
+        <button type="button" onclick="cambio()">Actualizar Sabor</button>
+        <br>
+
+        <!-- Formulario de edición (inicialmente oculto) -->
+        <div id="formularioEdicion" style="display: none;">
+            <label for="editEntityName">Nombre del sabor de la nieve:</label>
+            <input type="text" id="editEntityName" required>
+
+            <label for="editAttribute1">Sabor Especial</label>
+            <input type="text" id="editAttribute1" required>
+
+            <label for="editAttribute2">Sabor Exótico</label>
+            <input type="text" id="editAttribute2" required>
+
+            <label for="editAttribute3">Sabor Clásico</label>
+            <input type="text" id="editAttribute3" required>
+
+            <label for="editDateAttribute">Fecha de producción:</label>
+            <input type="date" id="editDateAttribute" required>
+
+            <button type="button" onclick="actualizarHelado()">Actualizar Sabor</button>
+        </div>
+
+        <script src="detalles.js"></script>
+    </div>
+</body>
+</html>
